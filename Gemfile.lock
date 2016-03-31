@@ -190,7 +190,7 @@ DEPENDENCIES
   jquery-rails
   pg
   quiet_assets
-  rails (= 4.2.5.1)
+  rails
   rails_12factor
   rails_layout
   sass-rails (~> 5.0)
