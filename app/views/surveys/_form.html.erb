@@ -1,0 +1,55 @@
+<%= simple_form_for(@survey) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <ol>
+    <li><div class="form-group">
+    <%= f.label :one,  "Do you feel that an online social network specifically for artists could enhance the artist’s community?" %>
+    <%= f.text_area :one %>
+  </div></li>
+
+ <li> <div class="form-group">
+    <%= f.label :two, "What would you like to see included in a potential online social network for artists?" %>
+    <%= f.text_area :two %>
+  </div></li>
+  
+  <li><div class="form-group">
+    <%= f.label :three, "If anything, what would you like to see excluded from a potential online social network for artists?" %>
+    <%= f.text_area :three %>
+  </div></li>
+
+<li><div>
+    <%= f.label :four, "Do you have any specific fears or reservations about an online social network for artists?" %>
+    <%= f.text_area :four %>
+  </div></li>
+
+<li><div class="form-group">
+    <%= f.label :five, " Our platform includes both options for workshopping project drafts (scripts, poems, chapters, paintings etc) and concepts for those who have yet to complete a draft of their project. Do you believe a conceptual workshopping section would be helpful to you and/or the average artist?" %>
+    <%= f.text_area :five %>
+  </div></li>
+
+<li><div class="form-group">
+    <%= f.label :six, "As mentioned above, our platform focuses on concept and draft workshopping. Are we forgetting about any key steps in the development of a piece of art that you don’t see represented, and feel should be?" %>
+    <%= f.text_area :six %>
+  </div></li>
+
+<li><div class="form-group">
+    <%= f.label :seven, "Do you think that you would submit personal projects for others to review or review other people’s projects more often?" %>
+    <%= f.text_area :seven %>
+  </div></li>
+
+<li><div class="form-group">
+    <%= f.label :eight,"Is there anything else you’d like to let us know?" %>
+    <%= f.text_area :eight %>
+  </div></li>
+
+   
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Submit" %>
+  </div>
+
+<% end %>
+  </ol>

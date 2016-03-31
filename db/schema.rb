@@ -11,7 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160329182753) do
+ActiveRecord::Schema.define(version: 20160329193209) do
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.string   "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "surveys", force: :cascade do |t|
+    t.text     "one"
+    t.text     "two"
+    t.text     "three"
+    t.text     "four"
+    t.text     "five"
+    t.text     "six"
+    t.text     "seven"
+    t.text     "eight"
+    t.text     "nine"
+    t.text     "ten"
+    t.text     "eleven"
+    t.text     "twelve"
+    t.text     "thirteen"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
